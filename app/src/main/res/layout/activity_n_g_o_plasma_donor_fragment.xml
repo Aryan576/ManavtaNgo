@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE8E8"
+    tools:context=".ngo.Fragment.NGOPlasmaDonorFragment">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"
+        android:layout_marginTop="14dp"
+        android:dividerHeight="14dp"
+        android:layout_marginHorizontal="14dp"
+        android:divider="@android:color/transparent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:tint="#fff"
+        app:fabCustomSize="60dp"
+        android:backgroundTint="@color/purple_700"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ic_hospital"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>

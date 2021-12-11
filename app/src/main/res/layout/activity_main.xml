@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#134F5C"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ngo_inner_layout">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/source_sans"
+        android:text="WELCOME !"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+        <View
+            android:id="@+id/edt_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_welcome"
+            android:layout_marginTop="8dp"
+            android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_line"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/source_sans"
+        android:text="Login"
+        android:textColor="#434343"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/in_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_lg"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:hint="Email">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_mail"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_email"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/source_sans"
+            android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/in_password"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/in_email"
+            android:layout_marginTop="25dp"
+            android:hint="Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_pass"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@id/in_email"
+                android:fontFamily="@font/source_sans"
+                android:singleLine="true"
+                 />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/in_password"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/source_sans"
+            android:text="Forgot Password?"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_login_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            android:textColor="#B8B1B1"
+            android:textAllCaps="false"
+            android:background="@drawable/ngo_app_btn_sign_up"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login_page"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Don't have an account?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+        android:id="@+id/tv_register2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_page"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv_register"
+        android:text=" Register"
+        android:textColor="#134F5C"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

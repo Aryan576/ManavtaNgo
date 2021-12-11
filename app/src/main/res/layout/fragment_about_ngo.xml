@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    >
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="33dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ngo_inner_layout"
+        android:layout_marginBottom="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/source_sans"
+            android:text="About  Manvta NGO"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/edt_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_about_us"
+            android:layout_marginTop="25dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/source_sans"
+            android:padding="18dp"
+            android:text="This app is made for people who are in urgent need of oxygen, plasma and vacant beds in hospitals during this pandemic. This app helps people connect with hospitals who have vacant beds/ vacant ICU. This app can also help people connect with hospitals if they voluntarily want to donate plasma or give out extra oxygen cylinders if they have any."
+            android:textColor="#000"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

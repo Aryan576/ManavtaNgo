@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#134F5C"
+    tools:context=".MainSignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:layout_margin="40dp"
+            android:background="@drawable/ngo_inner_layout">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/source_sans"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/edt_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_register"
+                android:layout_marginTop="8dp"
+                android:background="@color/black" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_line"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="25dp"
+                android:hint="First Name ">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/in_email"
+                    android:fontFamily="@font/source_sans"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_last_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Last Name">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/in_last_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/in_email"
+                    android:fontFamily="@font/source_sans"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_last_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Email">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/in_email"
+                    android:fontFamily="@font/source_sans"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_email"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Password">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_password2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/in_email"
+                    android:fontFamily="@font/source_sans"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/in_dob"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_password"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edtbg"
+                android:hint="Date of Birth"
+                android:padding="15dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_dob"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Address">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/in_email"
+                    android:fontFamily="@font/source_sans"
+                    android:gravity="top|left"
+                    android:lines="6"
+                    android:maxLines="8"
+                    android:minLines="4"
+                    android:scrollbars="vertical" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/in_contact"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/in_address"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Contact No.">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_contact2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/in_email"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/source_sans"
+                    android:padding="15dp"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <android.widget.Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/in_contact"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/ngo_app_btn_sign_up"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="#B8B1B1"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

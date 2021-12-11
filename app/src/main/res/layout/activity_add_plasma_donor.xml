@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ngo.Fragment.AddPlasmaDonorFragment"
+    android:background="#134F5C"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+
+                android:layout_centerInParent="true"
+                android:background="@drawable/ngo_inner_layout">
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="25dp"
+                    android:fontFamily="@font/source_sans"
+                    android:text="Add Plasma Donor"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/edt_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_register"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/black" />
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_line"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="25dp"
+                    android:hint="Name ">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:layout_below="@id/edt_line"
+                        android:fontFamily="@font/source_sans"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/age"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Age">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        android:layout_below="@id/name"
+                        android:fontFamily="@font/source_sans"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/gender"
+                    android:layout_below="@id/age"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edtbg"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_male"
+                        android:text="Male"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_female"
+                        android:text="Female"/>
+
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bloodgroup"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gender"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Blood Group">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_bloodgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gender"
+                        android:padding="15dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/source_sans"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/weight"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bloodgroup"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Weightc [Kg]">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bloodgroup"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        android:fontFamily="@font/source_sans"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateofcovidpositive"
+                    android:layout_below="@id/weight"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edtbg"
+                    android:hint="Date of Covid Positive"
+                    android:padding="15dp" />
+
+                <TextView
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateofcovidnegative"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edtbg"
+                    android:layout_below="@id/dateofcovidpositive"
+                    android:hint="Date of Covid Negative"
+                    android:padding="15dp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phonenumber"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dateofcovidnegative"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Phone Number">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dateofcovidnegative"
+                        android:padding="15dp"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:fontFamily="@font/source_sans"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/city"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phonenumber"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="City">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/phonenumber"
+                        android:padding="15dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/source_sans"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/state"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/city"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="State">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/city"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:fontFamily="@font/source_sans"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <android.widget.Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/state"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/ngo_app_btn_sign_up"
+                    android:text="Add Plasma Donor"
+                    android:textAllCaps="false"
+                    android:textColor="#B8B1B1"
+                    android:textSize="20sp" />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

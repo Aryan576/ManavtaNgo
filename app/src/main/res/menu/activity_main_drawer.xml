@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_availability"
+            android:icon="@drawable/ic_run"
+            android:title="Availability" />
+
+        <item
+        android:id="@+id/nav_donate"
+        android:icon="@drawable/ic_hospital"
+        android:title="Donate Plasma" />
+
+        <item
+            android:id="@+id/nav_symptoms"
+            android:icon="@drawable/ic_baseline_coronavirus_24"
+            android:title="Symptoms" />
+
+        <item
+            android:id="@+id/nav_prevention"
+            android:icon="@drawable/ic_baseline_clean_hands_24"
+            android:title="Prevention" />
+
+        <item
+            android:id="@+id/nav_vaccination"
+            android:icon="@drawable/syringe"
+            android:title="Book for vaccination" />
+
+        <item
+            android:id="@+id/nav_helpline"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="Help Line" />
+
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_call"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_nfo"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power"
+            android:title="Logout" />
+    </group>
+</menu>
